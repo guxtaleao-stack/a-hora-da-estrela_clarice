@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reconhecidos Tarde Demais</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #111;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-weight: normal;
+      font-size: 1.4em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    blockquote {
+      font-style: italic;
+      font-size: 1.1em;
+      color: #444;
+      margin: 10px auto 30px;
+      max-width: 600px;
+    }
+
+    .about {
+      text-align: center;
+      margin-bottom: 60px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .about p {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .person {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .person:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .person img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .person h2 {
+      font-size: 1.6em;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    .person h3 {
+      font-weight: normal;
+      font-size: 1em;
+      color: #777;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .dates {
+      font-style: italic;
+      text-align: center;
+      color: #999;
+      margin-bottom: 15px;
+    }
+
+    .bio, .posthumous {
+      text-align: center;
+      font-size: 0.95em;
+      max-width: 90%;
+      margin: 0 auto 10px;
+    }
+
+    .posthumous {
+      font-weight: bold;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      padding: 40px 20px;
+      font-style: italic;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+
+      .cards {
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Reconhecidos Tarde Demais</h1>
+    <h2>Histórias de quem só foi visto após partir</h2>
+    <blockquote>“A morte é um encontro consigo mesmo. A morte é nupcial.”<br>— Clarice Lispector</blockquote>
+  </header>
+
+  <section class="about">
+    <p>
+      Este site foi inspirado no livro <em>A Hora da Estrela</em>, de Clarice Lispector, que narra a invisibilidade de uma mulher comum em meio à indiferença do mundo. Aqui reunimos artistas, pensadores e criadores cuja genialidade foi ignorada em vida, mas celebrada depois da morte.
+    </p>
+    <p>
+      <strong>"Ela nasceu com maus antecedentes e agora parecia uma filha de um não-sei-o-quê com ar de se desculpar por ocupar espaço."</strong>
+    </p>
+  </section>
+
+  <section class="cards">
+
+    <div class="person">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%282325480%29.jpg" alt="Vincent van Gogh">
+      <h2>Vincent van Gogh</h2>
+      <h3>Pintor</h3>
+      <div class="dates">1853 — 1890</div>
+      <p class="bio">Vendeu apenas uma pintura em vida, vivendo na pobreza e sofrendo de doenças mentais. Hoje é um dos artistas mais celebrados e valiosos da história.</p>
+      <p class="posthumous">Suas obras alcançam valores recordes em leilões, com "Retrato do Dr. Gachet" vendido por US$ 82,5 milhões. Museus dedicados à sua obra existem em todo o mundo.</p>
+    </div>
+
+    <div class="person">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Emily_Dickinson_daguerreotype_1846-47.jpg" alt="Emily Dickinson">
+      <h2>Emily Dickinson</h2>
+      <h3>Poetisa</h3>
+      <div class="dates">1830 — 1886</div>
+      <p class="bio">Viveu reclusa, escrevendo quase 1.800 poemas que permaneceram desconhecidos. Apenas 10 foram publicados em vida, todos anonimamente.</p>
+      <p class="posthumous">Reconhecida como uma das maiores poetisas americanas, suas obras são estudadas mundialmente e influenciaram gerações de escritores.</p>
+    </div>
+
+    <div class="person">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Kafka_portrait.jpg/440px-Kafka_portrait.jpg" alt="Franz Kafka">
+      <h2>Franz Kafka</h2>
+      <h3>Escritor</h3>
+      <div class="dates">1883 — 1924</div>
+      <p class="bio">Publicou pouco em vida e pediu ao amigo Max Brod que queimasse todos os seus manuscritos após sua morte. Brod desobedeceu.</p>
+      <p class="posthumous">Tornou-se um dos escritores mais influentes do século XX. O termo "kafkiano" entrou no vocabulário mundial para descrever situações absurdas e opressivas.</p>
+    </div>
+
+    <div class="person">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/49/Vivian_Maier_self_portrait.jpg" alt="Vivian Maier">
+      <h2>Vivian Maier</h2>
+      <h3>Fotógrafa</h3>
+      <div class="dates">1926 — 2009</div>
+      <p class="bio">Trabalhou como babá a vida toda, fotografando secretamente as ruas de Chicago e Nova York. Suas fotos foram descobertas em um leilão de pertences.</p>
+      <p class="posthumous">Considerada uma das maiores fotógrafas de rua do século XX, com exposições em museus importantes e documentários sobre sua vida.</p>
+    </div>
+
+    <div class="person">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Gregor_Mendel_2.jpg/440px-Gregor_Mendel_2.jpg" alt="Gregor Mendel">
+      <h2>Gregor Mendel</h2>
+      <h3>Monge e Cientista</h3>
+      <div class="dates">1822 — 1884</div>
+      <p class="bio">Suas descobertas sobre hereditariedade foram ignoradas pela comunidade científica durante sua vida, sendo redescobertas apenas 16 anos após sua morte.</p>
+      <p class="posthumous">Reconhecido como o pai da genética moderna. Suas leis da hereditariedade são fundamentais para a biologia e medicina contemporâneas.</p>
+    </div>
+
+    <div class="person">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Stieg_Larsson.jpg" alt="Stieg Larsson">
+      <h2>Stieg Larsson</h2>
+      <h3>Jornalista e Escritor</h3>
+      <div class="dates">1954 — 2004</div>
+      <p class="bio">Morreu de ataque cardíaco antes de ver seus livros publicados. Escreveu a trilogia Millennium trabalhando à noite, após seu emprego como jornalista.</p>
+      <p class="posthumous">Seus livros venderam mais de 100 milhões de cópias mundialmente, tornando-se um dos autores mais vendidos da história. Adaptados para cinema e TV.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    Este site é um tributo àquelas vidas que floresceram tarde demais para serem vistas.<br>
+    Porque como Macabéa, muitos só brilham depois que já não estão mais aqui.
+  </footer>
+
+</body>
+</html>
